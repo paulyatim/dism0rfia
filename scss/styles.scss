@@ -1,14 +1,14 @@
 @font-face {
     font-family: IndustrialDesign;
-    src: url(/fonts/IndustrialDesign.ttf);
+    src: url(../fonts/IndustrialDesign.ttf);
 }
 @font-face {
     font-family: IntegralCF;
-    src: url(/fonts/IntegralCF/Fontspring-DEMO-integralcf-regular.otf);
+    src: url(../fonts/IntegralCF-Regular.ttf);
 }
 @font-face {
     font-family: IntegralCF-Bold;
-    src: url(/fonts/IntegralCF/Fontspring-DEMO-integralcf-bold.otf);
+    src: url(../fonts/IntegralCF-Bold.ttf);
 }
 
 @import "variables";
@@ -102,19 +102,17 @@ nav {
             display: flex;
             flex-direction: column;
             align-self: end;
-            padding-right: 5%;
+            padding-right: 7%;
             h2 {
                 font-size: 10vw;
-                line-height: 7vw;
+                line-height: 8vw;
                 text-align: center;
-                letter-spacing: 4px;
+                letter-spacing: 5px;
                 margin: 20px 0;
-                span {
-                    font-family: IntegralCF;
-                    .underlined-blue {
-                        border-bottom: 2px solid $blue;
-                        padding-bottom: 20px;
-                    }
+                font-family: IntegralCF;
+                .underlined-blue {
+                    border-bottom: 2px solid $blue;
+                    padding-bottom: 20px;
                 }
             }
         }
@@ -191,7 +189,7 @@ nav {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 88vw;
+        width: 83vw;
         .page-title {
             font-family: IntegralCF-Bold;
             font-size: 3.5vw;
