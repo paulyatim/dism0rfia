@@ -1,0 +1,328 @@
+@font-face {
+  font-family: IndustrialDesign;
+  src: url(/fonts/IndustrialDesign.ttf); }
+
+@font-face {
+  font-family: IntegralCF;
+  src: url(/fonts/IntegralCF/Fontspring-DEMO-integralcf-regular.otf); }
+
+@font-face {
+  font-family: IntegralCF-Bold;
+  src: url(/fonts/IntegralCF/Fontspring-DEMO-integralcf-bold.otf); }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-image: linear-gradient(#000000, #121212);
+  color: #FFFFFF;
+  margin: 0; }
+
+#creativeDisorderContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh; }
+  #creativeDisorderContainer #introContainer {
+    width: 36%;
+    padding-bottom: 5%; }
+    #creativeDisorderContainer #introContainer #introImage {
+      width: 100%;
+      margin: 0 auto; }
+    #creativeDisorderContainer #introContainer #introText {
+      text-align: center;
+      padding: 10% 11%;
+      margin: 0;
+      font-size: 1.4vw; }
+  #creativeDisorderContainer #btnIntro {
+    background: none;
+    border: solid;
+    color: white;
+    border-color: #FFFFFF;
+    border-radius: 2vh;
+    padding: 0.6% 2.4% 0.7%;
+    font-size: 1.6vw;
+    position: absolute;
+    bottom: 10%;
+    cursor: pointer; }
+  #creativeDisorderContainer .tipoIndustrial {
+    font-family: IndustrialDesign;
+    font-size: 2.7vw;
+    line-height: 1.2vw;
+    text-align: center;
+    transform: rotate(-10deg);
+    position: absolute;
+    bottom: 10%;
+    left: 7%;
+    margin: 0; }
+
+nav {
+  width: 12vw;
+  padding-left: 5vw;
+  margin-top: 50px; }
+  nav .nav-bar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+    nav .nav-bar .nav-logo {
+      width: 75%;
+      margin-bottom: 2vw; }
+    nav .nav-bar li {
+      padding: 0.7vw 0;
+      font-size: 1vw;
+      text-transform: uppercase; }
+      nav .nav-bar li a {
+        text-decoration: none;
+        color: #FFFFFF; }
+
+#homeBody {
+  display: flex;
+  flex-direction: column; }
+  #homeBody #homeHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px; }
+    #homeBody #homeHeader #homeTitle {
+      display: flex;
+      flex-direction: column;
+      align-self: end;
+      padding-right: 5%; }
+      #homeBody #homeHeader #homeTitle h2 {
+        font-size: 10vw;
+        line-height: 7vw;
+        text-align: center;
+        letter-spacing: 4px;
+        margin: 20px 0; }
+        #homeBody #homeHeader #homeTitle h2 span {
+          font-family: IntegralCF; }
+          #homeBody #homeHeader #homeTitle h2 span .underlined-blue {
+            border-bottom: 2px solid #1169A0;
+            padding-bottom: 20px; }
+  #homeBody #homeContent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 5vw 0; }
+    #homeBody #homeContent .articleHome {
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      align-items: center; }
+      #homeBody #homeContent .articleHome video, #homeBody #homeContent .articleHome img {
+        width: 100%;
+        margin: 5%;
+        margin-bottom: 40px; }
+      #homeBody #homeContent .articleHome .border-gradient {
+        box-shadow: 0 0 150px rgba(17, 105, 160, 0.3); }
+      #homeBody #homeContent .articleHome h3 {
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 0; }
+      #homeBody #homeContent .articleHome .subtitle-article-home {
+        font-size: 15px;
+        text-align: center;
+        margin: 10px; }
+      #homeBody #homeContent .articleHome .link-article-home {
+        font-size: 15px;
+        text-transform: uppercase;
+        margin: 20px; }
+        #homeBody #homeContent .articleHome .link-article-home a {
+          color: #FFFFFF; }
+      #homeBody #homeContent .articleHome #workSectionHome {
+        margin-top: 2vw; }
+      #homeBody #homeContent .articleHome .tipoIndustrial {
+        font-family: IndustrialDesign;
+        font-size: 2.7vw;
+        line-height: 1.5vw;
+        text-align: center;
+        transform: rotate(3deg); }
+      #homeBody #homeContent .articleHome .btn-work-home {
+        background: none;
+        border: solid;
+        color: white;
+        border-color: #FFFFFF;
+        border-radius: 20px;
+        padding: 15px 60px 20px;
+        font-size: 1.6vw;
+        cursor: pointer; }
+
+#workBody {
+  display: flex;
+  flex-direction: row;
+  height: 100vh; }
+  #workBody #workContent {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 88vw; }
+    #workBody #workContent .page-title {
+      font-family: IntegralCF-Bold;
+      font-size: 3.5vw;
+      margin: 1vw 0 0 0; }
+    #workBody #workContent .industrial-page-subtitle {
+      font-family: IndustrialDesign;
+      font-size: 2.1vw;
+      text-align: center;
+      line-height: 1.4vw;
+      margin: 2vw 0 0 0; }
+    #workBody #workContent #workMenu {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-right: 4vw;
+      position: relative;
+      top: -2.4vw; }
+      #workBody #workContent #workMenu .work-menu-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 25%; }
+        #workBody #workContent #workMenu .work-menu-item img {
+          width: 120%;
+          position: relative; }
+        #workBody #workContent #workMenu .work-menu-item #canImage {
+          margin-top: 2vw; }
+        #workBody #workContent #workMenu .work-menu-item #cerealImage {
+          margin-top: 2.2vw; }
+        #workBody #workContent #workMenu .work-menu-item .work-menu-item-tag {
+          border: solid;
+          border-width: 1px;
+          border-color: #FFFFFF;
+          border-radius: 0.9vw;
+          padding: 0.8vw 0 1vw;
+          text-transform: uppercase;
+          width: 70%; }
+          #workBody #workContent #workMenu .work-menu-item .work-menu-item-tag h3 {
+            font-size: 1vw;
+            text-align: center;
+            margin: 0; }
+          #workBody #workContent #workMenu .work-menu-item .work-menu-item-tag p {
+            font-size: 0.8vw;
+            text-align: center;
+            margin: 0; }
+    #workBody #workContent .side-notation {
+      font-family: IndustrialDesign;
+      font-size: 1.5vw;
+      line-height: 1vw;
+      transform: rotate(-10deg);
+      position: relative;
+      background-color: #121212; }
+    #workBody #workContent #notationA {
+      right: 2.8vw;
+      bottom: 1.6vw; }
+    #workBody #workContent #notationB {
+      left: 8vw;
+      bottom: 1vw; }
+
+#aboutmeBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  #aboutmeBody #aboutmeHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px; }
+    #aboutmeBody #aboutmeHeader #aboutmeHeroImage {
+      width: 32.4vw; }
+      #aboutmeBody #aboutmeHeader #aboutmeHeroImage img {
+        width: 100%; }
+      #aboutmeBody #aboutmeHeader #aboutmeHeroImage p {
+        font-family: IndustrialDesign;
+        position: relative;
+        font-size: 2.5vw;
+        text-align: center;
+        transform: rotate(-10deg);
+        bottom: 12vw;
+        left: 14vw;
+        line-height: 1.6vw;
+        margin: 0; }
+    #aboutmeBody #aboutmeHeader #aboutmeIntro {
+      width: 48vw;
+      display: flex;
+      flex-direction: column; }
+      #aboutmeBody #aboutmeHeader #aboutmeIntro #aboutmeTitles {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        align-self: center;
+        margin: 4vw 0; }
+        #aboutmeBody #aboutmeHeader #aboutmeIntro #aboutmeTitles p {
+          font-family: IndustrialDesign;
+          font-size: 2vw;
+          margin: 0;
+          position: relative; }
+        #aboutmeBody #aboutmeHeader #aboutmeIntro #aboutmeTitles #hiIm {
+          top: 1.2vw;
+          left: -1.6vw; }
+        #aboutmeBody #aboutmeHeader #aboutmeIntro #aboutmeTitles #studentTrilingualBicultural {
+          top: -0.2vw;
+          align-self: center; }
+        #aboutmeBody #aboutmeHeader #aboutmeIntro #aboutmeTitles h2 {
+          font-family: IntegralCF-Bold;
+          font-size: 3vw;
+          margin: 0; }
+          #aboutmeBody #aboutmeHeader #aboutmeIntro #aboutmeTitles h2 span {
+            font-family: IndustrialDesign;
+            font-size: 4vw;
+            position: relative;
+            top: 0.6vw;
+            left: -0.2vw; }
+      #aboutmeBody #aboutmeHeader #aboutmeIntro .aboutme-subtitle {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        margin-bottom: 1vw; }
+        #aboutmeBody #aboutmeHeader #aboutmeIntro .aboutme-subtitle h3 {
+          font-size: 1.8vw;
+          padding-left: 2vw;
+          margin: 0; }
+        #aboutmeBody #aboutmeHeader #aboutmeIntro .aboutme-subtitle hr {
+          display: inline;
+          color: white;
+          background-color: white;
+          border-width: 0px;
+          width: 56%;
+          height: 1px;
+          margin: 0; }
+      #aboutmeBody #aboutmeHeader #aboutmeIntro ul {
+        list-style: none;
+        padding-right: 4vw;
+        margin-bottom: 4vw; }
+        #aboutmeBody #aboutmeHeader #aboutmeIntro ul li {
+          font-size: 1.3vw;
+          line-height: 1.8vw;
+          font-weight: 300;
+          letter-spacing: 0.05vw; }
+      #aboutmeBody #aboutmeHeader #aboutmeIntro #aboutmeContact {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 4vw; }
+        #aboutmeBody #aboutmeHeader #aboutmeIntro #aboutmeContact .contact-tag {
+          border: solid;
+          border-width: 1px;
+          border-color: #FFFFFF;
+          border-radius: 0.8vw;
+          padding: 0.3vw 0;
+          margin: 0.5vw 1vw;
+          text-transform: uppercase;
+          width: 36%; }
+          #aboutmeBody #aboutmeHeader #aboutmeIntro #aboutmeContact .contact-tag h3 {
+            font-size: 0.8vw;
+            text-align: center;
+            margin: 0.2vw; }
+          #aboutmeBody #aboutmeHeader #aboutmeIntro #aboutmeContact .contact-tag p {
+            font-size: 0.6vw;
+            text-align: center;
+            margin: 0; }
