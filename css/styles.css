@@ -225,7 +225,15 @@ nav {
 #aboutmeBody {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-bottom: 6vw; }
+  #aboutmeBody .notation {
+    font-family: IndustrialDesign;
+    position: relative;
+    font-size: 2.5vw;
+    text-align: center;
+    line-height: 1.6vw;
+    margin: 0; }
   #aboutmeBody #aboutmeHeader {
     display: flex;
     flex-direction: row;
@@ -235,16 +243,10 @@ nav {
       width: 32.4vw; }
       #aboutmeBody #aboutmeHeader #aboutmeHeroImage img {
         width: 100%; }
-      #aboutmeBody #aboutmeHeader #aboutmeHeroImage p {
-        font-family: IndustrialDesign;
-        position: relative;
-        font-size: 2.5vw;
-        text-align: center;
+      #aboutmeBody #aboutmeHeader #aboutmeHeroImage .notation {
         transform: rotate(-10deg);
         bottom: 12vw;
-        left: 14vw;
-        line-height: 1.6vw;
-        margin: 0; }
+        left: 14vw; }
     #aboutmeBody #aboutmeHeader #aboutmeIntro {
       width: 48vw;
       display: flex;
@@ -325,3 +327,159 @@ nav {
             font-size: 0.6vw;
             text-align: center;
             margin: 0; }
+  #aboutmeBody #curriculum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 9vw; }
+    #aboutmeBody #curriculum #cvTitle {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 4vw; }
+      #aboutmeBody #curriculum #cvTitle h2 {
+        font-family: IndustrialDesign;
+        font-size: 4vw;
+        font-weight: lighter;
+        margin: 0; }
+      #aboutmeBody #curriculum #cvTitle img {
+        width: 28vw;
+        position: relative;
+        bottom: 0.7vw;
+        left: 1.3vw; }
+    #aboutmeBody #curriculum #curriculumContent {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      #aboutmeBody #curriculum #curriculumContent ul {
+        list-style: none;
+        margin-left: 0.8vw;
+        padding-left: 0; }
+      #aboutmeBody #curriculum #curriculumContent li {
+        display: flex; }
+      #aboutmeBody #curriculum #curriculumContent li:before {
+        font-family: IndustrialDesign;
+        font-size: 2.7vw;
+        content: "*"; }
+      #aboutmeBody #curriculum #curriculumContent .cv-title {
+        border: solid;
+        border-width: 1px;
+        border-color: #FFFFFF;
+        border-radius: 0.8vw;
+        padding: 0.2vw 2.1vw 0.5vw;
+        text-transform: uppercase;
+        width: fit-content;
+        margin-bottom: 2vw; }
+        #aboutmeBody #curriculum #curriculumContent .cv-title h3 {
+          margin: 0;
+          font-size: 2vw; }
+      #aboutmeBody #curriculum #curriculumContent .cv-section {
+        width: 42%; }
+        #aboutmeBody #curriculum #curriculumContent .cv-section .cv-element {
+          margin-left: 0.5vw;
+          margin-bottom: 2vw;
+          width: 100%; }
+          #aboutmeBody #curriculum #curriculumContent .cv-section .cv-element h4 {
+            font-size: 1.6vw;
+            margin: 0;
+            text-transform: uppercase; }
+          #aboutmeBody #curriculum #curriculumContent .cv-section .cv-element h5 {
+            font-size: 1.4vw;
+            margin: 0;
+            font-weight: normal; }
+          #aboutmeBody #curriculum #curriculumContent .cv-section .cv-element hr {
+            border-width: 1px;
+            border-color: #1169A0; }
+          #aboutmeBody #curriculum #curriculumContent .cv-section .cv-element p {
+            font-size: 1vw;
+            line-height: 1.2vw; }
+          #aboutmeBody #curriculum #curriculumContent .cv-section .cv-element .date-location {
+            font-size: 0.8vw;
+            color: #8B8B8B;
+            font-style: italic; }
+      #aboutmeBody #curriculum #curriculumContent .box-blue-border {
+        padding: 2vw;
+        border-style: solid;
+        border-radius: 3vw;
+        border-color: #1169A0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 4vw; }
+        #aboutmeBody #curriculum #curriculumContent .box-blue-border #cvSoftwares {
+          display: flex;
+          justify-content: space-evenly;
+          width: 100%; }
+          #aboutmeBody #curriculum #curriculumContent .box-blue-border #cvSoftwares h4 {
+            font-size: 1.4vw;
+            text-transform: uppercase;
+            text-align: center;
+            margin: 0; }
+          #aboutmeBody #curriculum #curriculumContent .box-blue-border #cvSoftwares hr {
+            border-width: 1px;
+            border-color: #1169A0; }
+          #aboutmeBody #curriculum #curriculumContent .box-blue-border #cvSoftwares ul {
+            margin-left: 0; }
+          #aboutmeBody #curriculum #curriculumContent .box-blue-border #cvSoftwares .list-left {
+            text-align: left; }
+          #aboutmeBody #curriculum #curriculumContent .box-blue-border #cvSoftwares .list-center {
+            text-align: center; }
+          #aboutmeBody #curriculum #curriculumContent .box-blue-border #cvSoftwares .list-right {
+            text-align: right; }
+          #aboutmeBody #curriculum #curriculumContent .box-blue-border #cvSoftwares li {
+            font-size: 1vw;
+            list-style: none;
+            display: grid; }
+          #aboutmeBody #curriculum #curriculumContent .box-blue-border #cvSoftwares li:before {
+            content: ""; }
+        #aboutmeBody #curriculum #curriculumContent .box-blue-border #cvLanguages ul {
+          margin: 0; }
+        #aboutmeBody #curriculum #curriculumContent .box-blue-border #cvLanguages li {
+          font-size: 1.4vw;
+          display: block;
+          text-align: center; }
+          #aboutmeBody #curriculum #curriculumContent .box-blue-border #cvLanguages li span {
+            text-transform: uppercase;
+            font-weight: bold; }
+        #aboutmeBody #curriculum #curriculumContent .box-blue-border #cvLanguages li:before {
+          content: ""; }
+      #aboutmeBody #curriculum #curriculumContent #softwareLanguages {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 44.4%; }
+      #aboutmeBody #curriculum #curriculumContent #courses {
+        width: 44.4%; }
+        #aboutmeBody #curriculum #curriculumContent #courses .cv-element {
+          margin-bottom: 1vw; }
+        #aboutmeBody #curriculum #curriculumContent #courses h4 {
+          font-size: 1.4vw;
+          margin-bottom: 0.5vw; }
+        #aboutmeBody #curriculum #curriculumContent #courses p {
+          margin: 0; }
+        #aboutmeBody #curriculum #curriculumContent #courses .notation {
+          transform: rotate(-10deg);
+          bottom: 48vw;
+          right: 3vw;
+          text-align: left; }
+      #aboutmeBody #curriculum #curriculumContent #specialSkills {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        #aboutmeBody #curriculum #curriculumContent #specialSkills div ul {
+          display: flex;
+          justify-content: space-evenly; }
+          #aboutmeBody #curriculum #curriculumContent #specialSkills div ul li {
+            margin: 0 1vw; }
+            #aboutmeBody #curriculum #curriculumContent #specialSkills div ul li h4 {
+              padding-left: 0.5vw;
+              font-weight: normal;
+              font-size: 1.6vw;
+              text-transform: uppercase;
+              margin: 0; }
+        #aboutmeBody #curriculum #curriculumContent #specialSkills div img {
+          width: 55vw;
+          position: relative;
+          bottom: 2vw;
+          left: 2vw; }
