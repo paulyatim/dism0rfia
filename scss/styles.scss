@@ -179,91 +179,87 @@ nav {
         }
     }
 }
-#workBody {
+#workContent {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 83vw;
+}
+.page-title {
+    font-family: IntegralCF-Bold;
+    font-size: 3.5vw;
+    margin: 1vw 0 0 0;
+}
+.industrial-page-subtitle {
+    font-family: IndustrialDesign;
+    font-size: 2.1vw;
+    text-align: center;
+    line-height: 1.4vw;
+    margin: 2vw 0 0 0;
+}
+#workMenu {
     display: flex;
     flex-direction: row;
-    height: 100vh;
-    #workContent {
-        margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-right: 4vw;
+    position: relative;
+    top: -2.4vw;
+    .work-menu-item {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        width: 83vw;
-        .page-title {
-            font-family: IntegralCF-Bold;
-            font-size: 3.5vw;
-            margin: 1vw 0 0 0;
-        }
-        .industrial-page-subtitle {
-            font-family: IndustrialDesign;
-            font-size: 2.1vw;
-            text-align: center;
-            line-height: 1.4vw;
-            margin: 2vw 0 0 0;
-        }
-        #workMenu {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            margin-right: 4vw;
+        width: 25%;
+        text-decoration: none;
+        color: $white;
+        img {
+            width: 120%;
             position: relative;
-            top: -2.4vw;
-            .work-menu-item {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                width: 25%;
-                img {
-                    width: 120%;
-                    position: relative;
-                }
-                #canImage {
-                    margin-top: 2vw;
-                }
-                #cerealImage {
-                    margin-top: 2.2vw;
-                }
-                .work-menu-item-tag {
-                    border: solid;
-                    border-width: 1px;
-                    border-color: $white;
-                    border-radius: 0.9vw;
-                    padding: 0.8vw 0 1vw;
-                    text-transform: uppercase;
-                    width: 70%;
-                    h3 {
-                        font-size: 1vw;
-                        text-align: center;
-                        margin: 0;
-                    }
-                    p {
-                        font-size: 0.8vw;
-                        text-align: center;
-                        margin: 0;
-                    }
-                }
+        }
+        #canImage {
+            margin-top: 2vw;
+        }
+        #cerealImage {
+            margin-top: 2.2vw;
+        }
+        .work-menu-item-tag {
+            border: solid;
+            border-width: 1px;
+            border-color: $white;
+            border-radius: 0.9vw;
+            padding: 0.8vw 0 1vw;
+            text-transform: uppercase;
+            width: 70%;
+            h3 {
+                font-size: 1vw;
+                text-align: center;
+                margin: 0;
+            }
+            p {
+                font-size: 0.8vw;
+                text-align: center;
+                margin: 0;
             }
         }
-        .side-notation {
-            font-family: IndustrialDesign;
-            font-size: 1.5vw;
-            line-height: 1vw;
-            transform: rotate(-10deg);
-            position: relative;
-            background-color: $darkgray;
-        }
-        #notationA {
-            right: 2.8vw;
-            bottom: 1.6vw;
-        }
-        #notationB {
-            left: 8vw;
-            bottom: 1vw;
-            
-        }
     }
+}
+.side-notation {
+    font-family: IndustrialDesign;
+    font-size: 1.5vw;
+    line-height: 1vw;
+    transform: rotate(-10deg);
+    position: relative;
+    background-color: $darkgray;
+}
+#notationA {
+    right: 2.8vw;
+    bottom: 1.6vw;
+}
+#notationB {
+    left: 6vw;
+    bottom: 1vw;
 }
 #aboutmeBody {
     display: flex;
@@ -358,8 +354,6 @@ nav {
                 li {
                   font-size: 1.3vw;
                   line-height: 1.8vw;
-                  font-weight: 300;
-                  letter-spacing: 0.05vw;
                 }
             }
             #aboutmeContact {
@@ -377,6 +371,8 @@ nav {
                     margin: 0.5vw 1vw;
                     text-transform: uppercase;
                     width: 36%;
+                    color: $white;
+                    text-decoration: none;
                     h3 {
                         font-size: 0.8vw;
                         text-align: center;
@@ -485,6 +481,7 @@ nav {
                 flex-direction: column;
                 align-items: center;
                 margin-bottom: 4vw;
+                position: relative;
                 #cvSoftwares {
                     display: flex;
                     justify-content: space-evenly;
@@ -523,7 +520,6 @@ nav {
                 #cvLanguages {
                     ul {
                         margin: 0;
-
                     }
                     li {
                         font-size: 1.4vw;
@@ -547,6 +543,14 @@ nav {
             }
             #courses {
                 width: 44.4%;
+                .notation {
+                    transform: rotate(-10deg);
+                    text-align: left;
+                    position: absolute;
+                    left: -3vw;
+                    top: -2vw;
+                    background-color: #111111;
+                }
                 .cv-element {
                     margin-bottom: 1vw;
                 }
@@ -556,12 +560,6 @@ nav {
                 }
                 p {
                     margin: 0;
-                }
-                .notation {
-                    transform: rotate(-10deg);
-                    bottom: 48vw;
-                    right: 3vw;
-                    text-align: left;
                 }
             }
             #specialSkills {
@@ -593,5 +591,75 @@ nav {
                 }
             }
         }
+    }
+}
+.flex-body {
+    display: flex;
+    flex-direction: row;
+}
+.body-height-100 {
+    height: 100vh;
+}
+.works-content {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    text-align: center;
+    width: 83vw;
+    .industrial-page-subtitle {
+        margin: 0;
+        font-size: 3.5vw;
+        font-weight: normal;
+    }
+}
+.works-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    .work-item {
+        width: 50%;
+        margin-bottom: 100px;
+        .work-item-tag {
+            position: absolute;
+            transform: rotate(-10deg);
+            background-color: $black;
+            h5, h6 {
+                font-size: 28px;
+                text-transform: uppercase;
+                margin: 0;
+                line-height: 24px;
+            }
+            h6 {
+                font-family: IndustrialDesign;
+            }
+        }
+        a {
+            text-decoration: none;
+            color: $white;
+        }
+        img, video{
+            width: 80%;
+        }
+        h4 {
+            font-size: 20px;
+            margin: 34px 0 12px;
+        }
+        p {
+            font-size: 15px;
+            margin: 0;
+        }
+    }
+}
+.page-coming-soon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 83vw;
+    .industrial-page-subtitle {
+        margin: 0;
+        font-size: 3.5vw;
+        font-weight: normal;
     }
 }

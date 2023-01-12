@@ -151,76 +151,80 @@ nav {
         font-size: 1.6vw;
         cursor: pointer; }
 
-#workBody {
+#workContent {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 83vw; }
+
+.page-title {
+  font-family: IntegralCF-Bold;
+  font-size: 3.5vw;
+  margin: 1vw 0 0 0; }
+
+.industrial-page-subtitle {
+  font-family: IndustrialDesign;
+  font-size: 2.1vw;
+  text-align: center;
+  line-height: 1.4vw;
+  margin: 2vw 0 0 0; }
+
+#workMenu {
   display: flex;
   flex-direction: row;
-  height: 100vh; }
-  #workBody #workContent {
-    margin-top: 50px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-right: 4vw;
+  position: relative;
+  top: -2.4vw; }
+  #workMenu .work-menu-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 83vw; }
-    #workBody #workContent .page-title {
-      font-family: IntegralCF-Bold;
-      font-size: 3.5vw;
-      margin: 1vw 0 0 0; }
-    #workBody #workContent .industrial-page-subtitle {
-      font-family: IndustrialDesign;
-      font-size: 2.1vw;
-      text-align: center;
-      line-height: 1.4vw;
-      margin: 2vw 0 0 0; }
-    #workBody #workContent #workMenu {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      margin-right: 4vw;
-      position: relative;
-      top: -2.4vw; }
-      #workBody #workContent #workMenu .work-menu-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 25%; }
-        #workBody #workContent #workMenu .work-menu-item img {
-          width: 120%;
-          position: relative; }
-        #workBody #workContent #workMenu .work-menu-item #canImage {
-          margin-top: 2vw; }
-        #workBody #workContent #workMenu .work-menu-item #cerealImage {
-          margin-top: 2.2vw; }
-        #workBody #workContent #workMenu .work-menu-item .work-menu-item-tag {
-          border: solid;
-          border-width: 1px;
-          border-color: #FFFFFF;
-          border-radius: 0.9vw;
-          padding: 0.8vw 0 1vw;
-          text-transform: uppercase;
-          width: 70%; }
-          #workBody #workContent #workMenu .work-menu-item .work-menu-item-tag h3 {
-            font-size: 1vw;
-            text-align: center;
-            margin: 0; }
-          #workBody #workContent #workMenu .work-menu-item .work-menu-item-tag p {
-            font-size: 0.8vw;
-            text-align: center;
-            margin: 0; }
-    #workBody #workContent .side-notation {
-      font-family: IndustrialDesign;
-      font-size: 1.5vw;
-      line-height: 1vw;
-      transform: rotate(-10deg);
-      position: relative;
-      background-color: #121212; }
-    #workBody #workContent #notationA {
-      right: 2.8vw;
-      bottom: 1.6vw; }
-    #workBody #workContent #notationB {
-      left: 8vw;
-      bottom: 1vw; }
+    width: 25%;
+    text-decoration: none;
+    color: #FFFFFF; }
+    #workMenu .work-menu-item img {
+      width: 120%;
+      position: relative; }
+    #workMenu .work-menu-item #canImage {
+      margin-top: 2vw; }
+    #workMenu .work-menu-item #cerealImage {
+      margin-top: 2.2vw; }
+    #workMenu .work-menu-item .work-menu-item-tag {
+      border: solid;
+      border-width: 1px;
+      border-color: #FFFFFF;
+      border-radius: 0.9vw;
+      padding: 0.8vw 0 1vw;
+      text-transform: uppercase;
+      width: 70%; }
+      #workMenu .work-menu-item .work-menu-item-tag h3 {
+        font-size: 1vw;
+        text-align: center;
+        margin: 0; }
+      #workMenu .work-menu-item .work-menu-item-tag p {
+        font-size: 0.8vw;
+        text-align: center;
+        margin: 0; }
+
+.side-notation {
+  font-family: IndustrialDesign;
+  font-size: 1.5vw;
+  line-height: 1vw;
+  transform: rotate(-10deg);
+  position: relative;
+  background-color: #121212; }
+
+#notationA {
+  right: 2.8vw;
+  bottom: 1.6vw; }
+
+#notationB {
+  left: 6vw;
+  bottom: 1vw; }
 
 #aboutmeBody {
   display: flex;
@@ -301,9 +305,7 @@ nav {
         margin-bottom: 4vw; }
         #aboutmeBody #aboutmeHeader #aboutmeIntro ul li {
           font-size: 1.3vw;
-          line-height: 1.8vw;
-          font-weight: 300;
-          letter-spacing: 0.05vw; }
+          line-height: 1.8vw; }
       #aboutmeBody #aboutmeHeader #aboutmeIntro #aboutmeContact {
         display: flex;
         flex-direction: row;
@@ -318,7 +320,9 @@ nav {
           padding: 0.3vw 0;
           margin: 0.5vw 1vw;
           text-transform: uppercase;
-          width: 36%; }
+          width: 36%;
+          color: #FFFFFF;
+          text-decoration: none; }
           #aboutmeBody #aboutmeHeader #aboutmeIntro #aboutmeContact .contact-tag h3 {
             font-size: 0.8vw;
             text-align: center;
@@ -405,7 +409,8 @@ nav {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 4vw; }
+        margin-bottom: 4vw;
+        position: relative; }
         #aboutmeBody #curriculum #curriculumContent .box-blue-border #cvSoftwares {
           display: flex;
           justify-content: space-evenly;
@@ -450,6 +455,13 @@ nav {
         width: 44.4%; }
       #aboutmeBody #curriculum #curriculumContent #courses {
         width: 44.4%; }
+        #aboutmeBody #curriculum #curriculumContent #courses .notation {
+          transform: rotate(-10deg);
+          text-align: left;
+          position: absolute;
+          left: -3vw;
+          top: -2vw;
+          background-color: #111111; }
         #aboutmeBody #curriculum #curriculumContent #courses .cv-element {
           margin-bottom: 1vw; }
         #aboutmeBody #curriculum #curriculumContent #courses h4 {
@@ -457,11 +469,6 @@ nav {
           margin-bottom: 0.5vw; }
         #aboutmeBody #curriculum #curriculumContent #courses p {
           margin: 0; }
-        #aboutmeBody #curriculum #curriculumContent #courses .notation {
-          transform: rotate(-10deg);
-          bottom: 48vw;
-          right: 3vw;
-          text-align: left; }
       #aboutmeBody #curriculum #curriculumContent #specialSkills {
         width: 100%;
         display: flex;
@@ -483,3 +490,63 @@ nav {
           position: relative;
           bottom: 2vw;
           left: 2vw; }
+
+.flex-body {
+  display: flex;
+  flex-direction: row; }
+
+.body-height-100 {
+  height: 100vh; }
+
+.works-content {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  text-align: center;
+  width: 83vw; }
+  .works-content .industrial-page-subtitle {
+    margin: 0;
+    font-size: 3.5vw;
+    font-weight: normal; }
+
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 100px; }
+  .works-list .work-item {
+    width: 50%;
+    margin-bottom: 100px; }
+    .works-list .work-item .work-item-tag {
+      position: absolute;
+      transform: rotate(-10deg);
+      background-color: #000000; }
+      .works-list .work-item .work-item-tag h5, .works-list .work-item .work-item-tag h6 {
+        font-size: 28px;
+        text-transform: uppercase;
+        margin: 0;
+        line-height: 24px; }
+      .works-list .work-item .work-item-tag h6 {
+        font-family: IndustrialDesign; }
+    .works-list .work-item a {
+      text-decoration: none;
+      color: #FFFFFF; }
+    .works-list .work-item img, .works-list .work-item video {
+      width: 80%; }
+    .works-list .work-item h4 {
+      font-size: 20px;
+      margin: 34px 0 12px; }
+    .works-list .work-item p {
+      font-size: 15px;
+      margin: 0; }
+
+.page-coming-soon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 83vw; }
+  .page-coming-soon .industrial-page-subtitle {
+    margin: 0;
+    font-size: 3.5vw;
+    font-weight: normal; }
